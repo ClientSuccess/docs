@@ -26,7 +26,7 @@ You can send event information using simple `GET` requests.  Documentation for t
 
 2. Initialize the CSTrack library.
 	```
-	window.csTrack = new CSTrack('YOUR_PROJECT_ID', 'YOUR_API_KEY');
+	window.csTrack = new CSTrack('YOUR_TRACKING_ID', 'YOUR_API_KEY');
 	
 	// Add identification
 	window.csTrack.identify({
