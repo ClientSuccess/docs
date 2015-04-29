@@ -30,9 +30,9 @@ You can send event information using simple `GET` requests.  Documentation for t
 	
 	// Add identification
 	window.csTrack.identify({
-	    client: {
-	        id: 12345,                      // REQUIRED     A unique identifier for the client (may be string or number)
-	        name: 'Widget Factory'          // REQUIRED     A human readable name for the client.
+	    organization: {
+	        id: 12345,                      // REQUIRED     A unique identifier for the organization (may be string or number)
+	        name: 'Widget Factory'          // REQUIRED     A human readable name for the organization.
 	    },
 	    user: {
 	        id: 456789,                     // OPTIONAL     A unique identifier for the user (may be the user's email address)
