@@ -22,7 +22,7 @@ ClientSuccess supports the `identify`, `group`, `track`, and `page` methods of S
 The `group` method is required for any data to stick in ClientSuccess. Any `track` and `page` events fired before the `group` method is called for a particular user, will be lost.  
 
 
-## Identify
+#### Identify
 
 When you `identify` a user, Segment will pass that user's information to ClientSuccess with `userId` as an external user Id for ClientSuccess usage. ClientSuccess uses the following of Segment's standard user profile fields (in parentheses): 
 
@@ -32,16 +32,16 @@ When you `identify` a user, Segment will pass that user's information to ClientS
 All other traits will be sent to ClientSuccess as custom attributes and may be ignored.
 
 
-## Group
+#### Group
 
 When you call `group`, Segment will send that group's information to ClientSuccess with `groupId` as the id and `name` as the group name.  Both `groupId` and `name` are required for ClientSuccess.
 
 
-## Track
+#### Track
 
 When you `track` an event, Segment will send that event to ClientSuccess as a custom event.
 
 
-## Page
+#### Page
 
 When you track a `page` event, Segment will send that event to ClientSuccess as a custom event.
