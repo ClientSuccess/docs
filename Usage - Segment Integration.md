@@ -1,6 +1,6 @@
 # ClientSuccess / Segment Integration
 
-## Setup Process (for CSMs)
+## Getting Started (for CSMs)
 
 If your engineers have already setup Segment, adding Segment.io data to ClientSuccess is nice and simple. All you need to do is turn on the app integration.  
 
@@ -15,7 +15,7 @@ NOTE: Because ClientSuccess focuses on group level events, you must pass group i
 <br />
 - - -
 
-## Info for Developers
+## Getting Started (for Developers)
 
 ClientSuccess supports the `identify`, `group`, `track`, and `page` methods of Segment.
 
