@@ -15,7 +15,7 @@ NOTE: Because ClientSuccess focuses on group level events, you must pass group i
 <br />
 - - -
 
-## Getting Started (for Developers)
+## Getting Started (for Devs)
 
 ClientSuccess supports the `identify`, `group`, `track`, and `page` methods of Segment.
 
