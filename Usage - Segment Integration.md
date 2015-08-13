@@ -29,19 +29,19 @@ When you `identify` a user, Segment will pass that user's information to ClientS
 - `firstName` (`first_name`)
 - `lastName` (`last_name`)
 
-All other traits will be sent to ClientSuccess as custom attributes and may be ignored.
+All other `identify` traits will be sent to ClientSuccess as custom attributes and will be ignored.
 
 
 #### Group
 
-When you call `group`, Segment will send that group's information to ClientSuccess with `groupId` as the id and `name` as the group name.  Both `groupId` and `name` are required for ClientSuccess.
+When you call `group`, Segment will send that group's information to ClientSuccess with `groupId` as the id and `traits.name` as the group name.  Both `groupId` and `traits.name` are required for ClientSuccess. As with `identify`, all other `group` traits will be ignored.
 
 
 #### Track
 
-When you `track` an event, Segment will send that event to ClientSuccess as a custom event.
+When you `track` an event, Segment will send that event to ClientSuccess as a custom event. ClientSuccess focuses only on group and user-level events, any event without a `userId` (`user_id`) is completely ignored by ClientSuccess and will not show up in our reporting.
 
 
 #### Page
 
-When you track a `page` event, Segment will send that event to ClientSuccess as a custom event.
+When you track a `page` event, Segment will send that event to ClientSuccess as a custom event. As with `Track` calls, any event without a `userId` (`user_id`) is completely ignored by ClientSuccess and will not show up in our reporting.
