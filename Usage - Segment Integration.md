@@ -41,6 +41,8 @@ When you call `group`, Segment will send that group's information to ClientSucce
 
 When you `track` an event, Segment will send that event to ClientSuccess as a custom event. ClientSuccess focuses only on group and user-level events, any event without a `userId` (`user_id`) is completely ignored by ClientSuccess and will not show up in our reporting.
 
+ClientSuccess reports include a value for each tracked event. Our segment integration uses the number from `properties.value` as the `value` in ClientSuccess reports (see [Segment's docs](https://segment.com/docs/spec/track/#properties)). You can override this by passing `properties.csValue` with each `track` event. If neither of these is set, then `value` is set to 1 so that ClientSuccess reporting tracks the number of times that event happens (as is common for a pageview or other simple event).
+
 
 #### Page
 
