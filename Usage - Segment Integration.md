@@ -34,7 +34,9 @@ All other `identify` traits will be sent to ClientSuccess as custom attributes a
 
 #### Group
 
-When you call `group`, Segment will send that group's information to ClientSuccess with `groupId` as the id and `traits.name` as the group name.  Both `groupId` and `traits.name` are required for ClientSuccess. As with `identify`, all other `group` traits will be ignored.
+When you call `group`, Segment will send that group's information to ClientSuccess with `groupId` as the id and `traits.name` as the group name. Both `groupId` and `traits.name` are required for ClientSuccess. As with `identify`, all other `group` traits will be ignored.
+
+For `groupId`, you should send an identifier that is unique to the group (or client). This will be used to match usage events from individual users to specific groups (or clients), so the data can be aggregated.
 
 
 #### Track
