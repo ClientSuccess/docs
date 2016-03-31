@@ -41,7 +41,7 @@ You can send event information using simple `GET` requests.  Documentation for t
 	    }
 	});
 	```
-	NOTE: Users of ClientSuccess can get the TRACKING_ID and API_KEY from the [ClientSuccess settings page](https://app.clientsuccess.com/cs/settings/usage)
+	NOTE: Users of ClientSuccess can get the PROJECT_ID and API_KEY from the [ClientSuccess settings page](https://app.clientsuccess.com/cs/settings/usage)
 
 3. Track event.
 	```
