@@ -7,7 +7,7 @@ If your engineers have already setup Segment, adding Segment.io data to ClientSu
 To turn on the app integration, do the following:
 
 1. Go to the Segment integrations screen and toggle on the ClientSuccess integration.
-2. Add your "ClientSuccess Tracking Id" and "ClientSuccess Tracking API Key" (these can be found within ClientSuccess under the top right menu, Apps & Integrations > Usage).
+2. Add your ClientSuccess "Project Id" and ClientSuccess "API Key" (these can be found within ClientSuccess under the top right menu > Settings > Usage).
 
 <br />
 NOTE: Because ClientSuccess focuses on group level events, you must pass group information before your events will show up. If you turn on the ClientSuccess integration in Segment and don't see events in ClientSuccess after 24 hours, it may be that your engineers need to send group information to Segment using Segment's `group` call.  
