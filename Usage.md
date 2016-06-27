@@ -45,9 +45,11 @@ You can send event information using simple `GET` requests.  Documentation for t
 
 3. Track event.
 	```
-	window.csTrack.trackEvent('interaction - button pressed');
+	window.csTrack.trackEvent(eventName, aggregatedNumericValue /* optional */);
+	
+	// Example:
+	window.csTrack.trackEvent('pageview');
 	// OR
 	window.csTrack.trackEvent('subscription renewed', 1299.95);
 	```
-
-
+	NOTE: The ```aggregatedNumericValue``` is OPTIONAL, but if used, it MUST be a number. This replaces the default value of 1 and will be aggregated within ClientSuccess. Example use-cases include: Tracking multiple events using a single tracking call, or Tracking monetary values associated with events.
