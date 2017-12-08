@@ -3,11 +3,15 @@ Getting Started with ClientSuccess Usage Tracking
 
 ClientSuccess uses event/usage information to provide CSMs and Account Managers with views and insights into customer health.  This helps CSMs prioritize their time and act proactively to reduce customer churn.
 
-We currently support two ways of sending event data into ClientSuccess:
-> 1. Server-Side API
-> 2. JavaScript Tracking Library
+We currently support three ways of sending event data into ClientSuccess:
+> 1. Segment.io
+> 2. Server-Side API
+> 3. JavaScript Tracking Library 
 
 ----------
+###Segment.io
+
+You can use Segment.io to send your usage data to ClientSuccess by simply turning on your destination.  Documented instructions can be found at https://segment.com/docs/destinations/clientsuccess/
 
 ###Server-Side API
 
